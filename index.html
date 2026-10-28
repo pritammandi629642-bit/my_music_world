@@ -1,0 +1,152 @@
+      <!DOCTYPE html>
+<html>
+<head>
+<title>My Music World</title>
+
+<style>
+@keyframes music {
+  from {
+    transform: scaleY(0.5);
+  }
+  to {
+    transform: scaleY(1.5);
+  }
+}
+</style>
+
+</head>
+<script>
+<script>
+function searchSongs() {
+  let input = document.getElementById("songSearch").value.toLowerCase();
+  let songs = document.querySelectorAll("#songs + input ~ ul li");
+
+  songs.forEach(function(song) {
+    song.style.display = song.innerText.toLowerCase().includes(input) ? "" : "none";
+  });
+}
+</script>
+
+<button onclick="alert('🎵 Welcome to My Music World! ❤️')"
+style="background: purple; color: white; padding: 15px 25px; border: none; border-radius: 25px; font-size: 16px; box-shadow: 0 0 15px violet; display: block; margin: 20px auto;">
+💜 Click Me
+</button>
+
+<body style="background-color: lightblue; color: darkblue;">
+
+
+
+<nav style="background-color: navy; padding: 15px; text-align: center; border-radius: 10px;">
+  <a href="#home" style="color: white; margin: 10px;">Home</a>
+  <a href="#songs" style="color: white; margin: 10px;">Songs</a>
+  <a href="#about" style="color: white; margin: 10px;">About</a>
+</nav>
+
+
+<h1 id="home" style="color: blue;">🎵 My Music World 🎵</h1>
+
+<p style="font-size: 18px; color: purple; text-align: center;">
+  🎶 Welcome to My Music World! ❤️
+</p>
+
+<h2>🎶 Listen to Music</h2>
+<audio controls>
+  <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+</audio>
+
+<h2 id="songs">🎧 My Favourite Songs</h2>
+
+<div style="background-color: white; padding: 15px; margin: 10px; border-radius: 15px; text-align: center;">
+  <h3 style="color: purple;">🎶 My Music Player</h3>
+
+<input type="text" id="songSearch" onkeyup="searchSongs()" placeholder="🔍 Search your song..." style="padding: 10px; width: 80%; border-radius: 10px; border: 1px solid purple;">
+
+<div style="background-color: white; padding: 20px; margin: 10px; border-radius: 15px; text-align: center;">
+  <h3 style="color: purple;">🎶 Music is Life</h3>
+  <p style="color: darkblue;">Listen • Relax • Enjoy ❤️</p>
+</div>
+
+<ul style="list-style: none;">
+  <li>🎵 Song 1 <a href="https://www.w3schools.com/html/horse.mp3">▶ Play</a></li>
+  <li>🎶 Song 2 <a href="https://www.w3schools.com/html/horse.mp3">▶ Play</a></li>
+  <li>🎼 Song 3 <a href="https://www.w3schools.com/html/horse.mp3">▶ Play</a></li>
+</ul>
+<img src="https://www.w3cshool.com/html/img_girl.jpg" width="200">
+<p>My Beautiful Website ❤️</p> 
+<button onclick="alert('Hello Pritam!')">Click Me!</button>
+
+<hr>
+
+
+<h2 id="about" style="color: purple;">✨ About My Music World</h2>
+<p>Welcome to my music website!</p>
+
+<p style="color: red;">🎶 Music makes me happy ❤️</p>
+
+<hr>
+
+<div style="text-align: center; padding: 15px; background-color: lightblue; border-radius: 15px;">
+  <h2 style="color: darkblue;">🎵 Welcome to My Music World 🎵</h2>
+  <p>Enjoy your favourite music! ❤️</p>
+  <button onclick="alert('Keep Smiling with Music! 🎶')">
+    Click for Music Love
+  </button>
+</div>
+
+<h2>🎶 Play Your Music</h2>
+
+<audio id="myMusic" controls>
+  <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+</audio>
+
+<p>❤️ Enjoy your music!</p>
+
+<footer style="background-color: navy; color: white; text-align: center; padding: 15px; border-radius: 10px;">
+  <p>🎵 My Music World 🎵</p>
+  <p>Made with ❤️ by PʀɩTʌɱ</p>
+  <p>© 2026 All Rights Reserved</p>
+</footer>
+
+<button onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+style="background-color: purple; color: white; padding: 12px; border: none; border-radius: 10px; display: block; margin: 20px auto;">
+⬆️ Back to Top
+</button>
+
+<div style="background: linear-gradient(135deg, #240046, #7209b7, #f72585); color: white; padding: 25px; margin: 20px 0; border-radius: 20px; text-align: center; box-shadow: 0 0 18px #f72585;">
+  <h2>🎧 Music Vibes</h2>
+  <p>🎶 Feel the Beat • Live the Music ❤️</p>
+  <p style="font-size: 28px;">🎵 💜 🎵 💗 🎵</p>
+  <p>✨ Music makes every moment special ✨</p>
+</div>
+
+<h2 style="text-align: center; animation: rainbow 3s infinite;">
+  🎵 Music Is My Life 🎵
+</h2>
+
+<style>
+@keyframes rainbow {
+  0% { color: red; }
+  25% { color: blue; }
+  50% { color: purple; }
+  75% { color: deeppink; }
+  100% { color: red; }
+}
+</style>
+
+<div style="background: #24113d; color: white; padding: 15px; margin: 15px 0; border-radius: 15px; text-align: center;">
+  <h3>❤️ Agar Tum Mil Jao</h3>
+  <p>🎤 Shreya Ghoshal | Zeher</p>
+  <iframe
+    width="100%"
+    height="200"
+    src="https://www.youtube.com/embed/Me0MXyX1EEc"
+    title="Agar Tum Mil Jao"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</div>
+
+</body>
+</html>
+
+
